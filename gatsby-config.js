@@ -7,7 +7,8 @@ module.exports = {
         rootNote: `/index`,
       },
     },
-    `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
+    `obsidian-kanban`
   ],
   siteMetadata: {
     title: '이세계 향수공방',
