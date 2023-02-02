@@ -1,11 +1,14 @@
 [build]
-  publish = "public"
+  publish = "dist"
   command = "npm install && npm run build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
 
 [[redirects]]
   from = "/*"
   to = "/404"
   status = 404
 
-[template.environment]
-  TITLE = "set your site title here"
